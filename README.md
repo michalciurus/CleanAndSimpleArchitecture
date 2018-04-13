@@ -11,6 +11,8 @@ The goal was to demonstrate a solution for:
 - App routing
 - Easy app logic testing
 - Dividing app into separate modules
+- Simple API definition with Alamofire
+- Simple error handling
 
 # Architecture
 
