@@ -10,10 +10,11 @@ public struct BoxPresenter {
     public let identifier: Int
 }
 
-public class BoxFeedPresenter {
+public class BoxFeedPresenter: EmitsError {
     
     public var boxes = ValueObservable<[BoxPresenter]>(value: [])
     public var isLoading = ValueObservable<Bool>(value: false)
+    public var errorEvent = EventObservable<String>()
     
     internal func add(boxes newBoxes: [BoxDocument], atTheTop: Bool = false) {
         let boxesPresenters = newBoxes.map { (box) -> BoxPresenter in

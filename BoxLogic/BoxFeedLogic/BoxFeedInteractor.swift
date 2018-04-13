@@ -24,7 +24,7 @@ public class BoxFeedInteractor {
                     self?.presenter.add(boxes: fetchedBoxes)
                 }
             case .error:
-                return
+                self?.presenter.errorEvent.fireEvent(with: "Can't fetch initial boxes")
             }
         }
     }
@@ -40,7 +40,7 @@ public class BoxFeedInteractor {
                     self?.presenter.add(boxes: newBoxes)
                 }
             case .error:
-                return
+                self?.presenter.errorEvent.fireEvent(with: "Can't fetch more boxes")
             }
         }
     }
@@ -51,7 +51,7 @@ public class BoxFeedInteractor {
         boxAPI.deleteBox(identifier: boxId) { [weak self] result in
             switch result {
             case .error:
-                return
+                self?.presenter.errorEvent.fireEvent(with: "Can't delete box")
             default: break
             }
             

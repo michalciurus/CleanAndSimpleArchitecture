@@ -27,6 +27,7 @@ class CreateBoxViewController: UIViewController {
         title = "Create Box"
         textChanged(keyText)
         setupObservers()
+        subscribeTo(errorEmitter: interactor.presenter)
     }
     
     @IBAction func didTapCreateBox(_ sender: Any) {

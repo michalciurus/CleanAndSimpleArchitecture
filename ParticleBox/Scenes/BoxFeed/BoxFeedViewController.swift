@@ -22,6 +22,7 @@ class BoxFeedViewController: UITableViewController {
         setupObservers()
         addCreateBoxButton()
         interactor.fetchInitialBoxes()
+        subscribeTo(errorEmitter: interactor.presenter)
     }
     
     // MARK: Table View Delegate
