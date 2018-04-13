@@ -18,6 +18,8 @@ The goal was to demonstrate a solution for:
 - Simple API definition with Alamofire
 - Simple error handling
 
+Code has been divided in separate targets which makes the app modular and cleanly draws a line between different domains of the app and their tests.
+
 # Architecture
 
 The architecture of my invention is a simple evolution of MVVM. Its goal was to separate business logic and presentation logic.
