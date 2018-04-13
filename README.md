@@ -17,4 +17,4 @@ The goal was to demonstrate a solution for:
 The architecture of my invention is a simple evolution of MVVM. Its goal was to separate business logic and presentation logic.
 It's similar to [VIPER](https://www.objc.io/issues/13-architecture/viper/) but simpler to set up.
 
-[https://pbs.twimg.com/media/DCwJoM-XUAAJJD2?format=jpg!](arch)
+![arch](https://pbs.twimg.com/media/DCwJoM-XUAAJJD2?format=jpg)
