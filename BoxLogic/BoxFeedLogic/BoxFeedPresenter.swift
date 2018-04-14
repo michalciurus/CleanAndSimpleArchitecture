@@ -28,7 +28,6 @@ public class BoxFeedPresenter: EmitsError {
             boxes.value?.insert(contentsOf: boxesPresenters, at: 0)
         } else {
             boxes.value?.append(contentsOf: boxesPresenters)
-
         }
     }
     

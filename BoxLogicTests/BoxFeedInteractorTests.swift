@@ -27,7 +27,9 @@ class BoxFeedInteractorTests: XCTestCase {
     
     func testDelete() {
         boxFeedInteractor.fetchInitialBoxes()
-        boxFeedInteractor.deleteBox(at: 0)
+        boxFeedInteractor.deleteBox(at: 0) { success in
+            
+        }
         XCTAssert(boxFeedInteractor.presenter.boxes.value?.count == 0)
     }
     

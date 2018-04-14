@@ -45,17 +45,19 @@ public class BoxFeedInteractor {
         }
     }
     
-    public func deleteBox(at index: Int) {
+    public func deleteBox(at index: Int, completion: @escaping (Bool) -> ()) {
         let boxId = presenter.boxes.value![index].identifier
         
         boxAPI.deleteBox(identifier: boxId) { [weak self] result in
             switch result {
             case .error:
                 self?.presenter.errorEvent.fireEvent(with: "Can't delete box")
+                completion(false)
             default: break
             }
             
             self?.presenter.deleteBox(at: index)
+            completion(true)
         }
     }
     

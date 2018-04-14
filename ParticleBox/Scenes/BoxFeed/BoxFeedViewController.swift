@@ -9,6 +9,7 @@ class BoxFeedViewController: UITableViewController {
     let interactor = BoxFeedInteractor()
     @IBOutlet private weak var loadMoreButton: UIButton!
     @IBOutlet private weak var loadingIndicator: UIActivityIndicatorView!
+    var shouldRunDeleteAnimation = false
     
     let createBoxEvent = EventObservable<Void>()
     
@@ -23,6 +24,13 @@ class BoxFeedViewController: UITableViewController {
         addCreateBoxButton()
         interactor.fetchInitialBoxes()
         subscribeTo(errorEmitter: interactor.presenter)
+        
+        tableView.refreshControl = UIRefreshControl()
+        tableView.refreshControl?.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
+    }
+    
+    @objc func pullToRefresh() {
+        interactor.fetchInitialBoxes()
     }
     
     // MARK: Table View Delegate
@@ -44,8 +52,14 @@ class BoxFeedViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // TODO: Add delete animation
-            interactor.deleteBox(at: indexPath.row)
+            shouldRunDeleteAnimation = true
+            interactor.deleteBox(at: indexPath.row) { [weak self] success in
+                if success {
+                    self?.tableView.deleteRows(at: [indexPath], with: .automatic)
+                    self?.shouldRunDeleteAnimation = false
+                }
+            }
+            
         }
     }
 }
@@ -54,7 +68,9 @@ private extension BoxFeedViewController {
     
     func setupObservers() {
         interactor.presenter.boxes.observe { [weak self] _ in
+            guard self?.shouldRunDeleteAnimation == false else { return }
             self?.tableView.reloadData()
+            self?.tableView.refreshControl?.endRefreshing()
         }
         
         interactor.presenter.isLoading.observe { [weak self] isLoading in
