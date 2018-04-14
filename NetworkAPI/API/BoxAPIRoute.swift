@@ -35,7 +35,7 @@ enum BoxAPIRoute: URLRequestConvertible {
                 ["per_page" : NetworkConstants.itemsPerPage, "page" : page])
         case .createBox(let box):
             let encoder = JSONEncoder.boxEncoder()
-            let encodedBox = try! encoder.encode(box)
+            let encodedBox = try encoder.encode(box)
             urlRequest.httpBody = encodedBox
         case .delete: break
         }
