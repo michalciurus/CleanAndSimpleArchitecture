@@ -4,6 +4,8 @@ import XCTest
 @testable import BoxLogic
 import NetworkAPI
 
+
+/// Integration tests for Box Feed interactor + presenter
 class BoxFeedInteractorTests: XCTestCase {
     
     var boxFeedInteractor: BoxFeedInteractor!

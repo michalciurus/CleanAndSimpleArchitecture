@@ -52,8 +52,6 @@
 		3FF1E9D2207FFE4C00612788 /* JSONDecoder+BoxAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1E9D1207FFE4C00612788 /* JSONDecoder+BoxAPI.swift */; };
 		3FF1E9D520800DDD00612788 /* JSONEncoder+BoxAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1E9D420800DDD00612788 /* JSONEncoder+BoxAPI.swift */; };
 		94D49E93C0736F30395F000F /* Pods_ParticleBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FB9C2F699E7932B3229A56 /* Pods_ParticleBox.framework */; };
-		963FB0B294537FDD70DE2DA7 /* Pods_SharedTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF39748E32208DF10FF5F07C /* Pods_SharedTools.framework */; };
-		A047437724485EFC1C3F3A72 /* Pods_SharedToolsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53F041719FBEBD29B5ADD93 /* Pods_SharedToolsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,15 +182,11 @@
 		3FF1E9D1207FFE4C00612788 /* JSONDecoder+BoxAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+BoxAPI.swift"; sourceTree = "<group>"; };
 		3FF1E9D420800DDD00612788 /* JSONEncoder+BoxAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONEncoder+BoxAPI.swift"; sourceTree = "<group>"; };
 		57FB9C2F699E7932B3229A56 /* Pods_ParticleBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		608DF2A5B7DB8FAD256BB26A /* Pods-SharedToolsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedToolsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SharedToolsTests/Pods-SharedToolsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		61E5C1E0DED2ABD2A8FBA1A3 /* Pods-ParticleBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParticleBox/Pods-ParticleBox.release.xcconfig"; sourceTree = "<group>"; };
 		6EC06B8EA51DBD2EB2431AFA /* Pods-NetworkAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkAPI/Pods-NetworkAPI.debug.xcconfig"; sourceTree = "<group>"; };
-		998B7CC9AD377A9322CB10CC /* Pods-SharedTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SharedTools/Pods-SharedTools.debug.xcconfig"; sourceTree = "<group>"; };
-		A01A0675E40BD4EAA27000E0 /* Pods-SharedTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-SharedTools/Pods-SharedTools.release.xcconfig"; sourceTree = "<group>"; };
 		BF39748E32208DF10FF5F07C /* Pods_SharedTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharedTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4452BAF2CDDFF612BF53AB6 /* Pods_NetworkAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B1F41B2539580ABABFF87B /* Pods-NetworkAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkAPI/Pods-NetworkAPI.release.xcconfig"; sourceTree = "<group>"; };
-		E9BDBFF94BCEEE12378F97C2 /* Pods-SharedToolsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedToolsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SharedToolsTests/Pods-SharedToolsTests.release.xcconfig"; sourceTree = "<group>"; };
 		F53F041719FBEBD29B5ADD93 /* Pods_SharedToolsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharedToolsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -227,7 +221,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963FB0B294537FDD70DE2DA7 /* Pods_SharedTools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +229,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F9483F7207FC9E200F3BAB0 /* SharedTools.framework in Frameworks */,
-				A047437724485EFC1C3F3A72 /* Pods_SharedToolsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,10 +487,6 @@
 				61E5C1E0DED2ABD2A8FBA1A3 /* Pods-ParticleBox.release.xcconfig */,
 				296B6B9353F1F7352A2143D6 /* Pods-ParticleBoxTests.debug.xcconfig */,
 				0B508FC39694E115F4868302 /* Pods-ParticleBoxTests.release.xcconfig */,
-				998B7CC9AD377A9322CB10CC /* Pods-SharedTools.debug.xcconfig */,
-				A01A0675E40BD4EAA27000E0 /* Pods-SharedTools.release.xcconfig */,
-				608DF2A5B7DB8FAD256BB26A /* Pods-SharedToolsTests.debug.xcconfig */,
-				E9BDBFF94BCEEE12378F97C2 /* Pods-SharedToolsTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -596,12 +584,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F948405207FC9E300F3BAB0 /* Build configuration list for PBXNativeTarget "SharedTools" */;
 			buildPhases = (
-				D9570DF1757DC7AB5B5BAF97 /* [CP] Check Pods Manifest.lock */,
 				3F9483E9207FC9E200F3BAB0 /* Sources */,
 				3F9483EA207FC9E200F3BAB0 /* Frameworks */,
 				3F9483EB207FC9E200F3BAB0 /* Headers */,
 				3F9483EC207FC9E200F3BAB0 /* Resources */,
-				F7000CCBD6B382CD5D4E6A5B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -616,12 +602,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F948408207FC9E300F3BAB0 /* Build configuration list for PBXNativeTarget "SharedToolsTests" */;
 			buildPhases = (
-				77B543D4080B1973A9E4AE5D /* [CP] Check Pods Manifest.lock */,
 				3F9483F2207FC9E200F3BAB0 /* Sources */,
 				3F9483F3207FC9E200F3BAB0 /* Frameworks */,
 				3F9483F4207FC9E200F3BAB0 /* Resources */,
-				17B920D6D6F54ACD3283F18D /* [CP] Embed Pods Frameworks */,
-				605EA3ED6EDCE2F2126D73DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -780,54 +763,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParticleBox/Pods-ParticleBox-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		17B920D6D6F54ACD3283F18D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SharedToolsTests/Pods-SharedToolsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		605EA3ED6EDCE2F2126D73DE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SharedToolsTests/Pods-SharedToolsTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		77B543D4080B1973A9E4AE5D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SharedToolsTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7B244F53AFBC554133599F2D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -877,39 +812,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D9570DF1757DC7AB5B5BAF97 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SharedTools-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F7000CCBD6B382CD5D4E6A5B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SharedTools/Pods-SharedTools-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F9A74BA5E2881E0CC76B516B /* [CP] Copy Pods Resources */ = {
@@ -1074,11 +976,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BoxLogic/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.BoxLogic;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1104,11 +1002,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BoxLogic/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.BoxLogic;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1127,11 +1021,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6QC8GZ62E;
 				INFOPLIST_FILE = BoxLogicTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.BoxLogicTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1149,11 +1039,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6QC8GZ62E;
 				INFOPLIST_FILE = BoxLogicTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.BoxLogicTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1285,10 +1171,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6QC8GZ62E;
 				INFOPLIST_FILE = ParticleBox/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.ParticleBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1305,10 +1188,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6QC8GZ62E;
 				INFOPLIST_FILE = ParticleBox/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.ParticleBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1318,7 +1198,6 @@
 		};
 		3F948406207FC9E300F3BAB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 998B7CC9AD377A9322CB10CC /* Pods-SharedTools.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1330,11 +1209,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SharedTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.SharedTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1347,7 +1222,6 @@
 		};
 		3F948407207FC9E300F3BAB0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A01A0675E40BD4EAA27000E0 /* Pods-SharedTools.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1359,11 +1233,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SharedTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.SharedTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1376,17 +1246,12 @@
 		};
 		3F948409207FC9E300F3BAB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 608DF2A5B7DB8FAD256BB26A /* Pods-SharedToolsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6QC8GZ62E;
 				INFOPLIST_FILE = SharedToolsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.SharedToolsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1397,17 +1262,12 @@
 		};
 		3F94840A207FC9E300F3BAB0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9BDBFF94BCEEE12378F97C2 /* Pods-SharedToolsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6QC8GZ62E;
 				INFOPLIST_FILE = SharedToolsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.SharedToolsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1431,11 +1291,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NetworkAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.NetworkAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1462,11 +1318,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NetworkAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.NetworkAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
