@@ -1,10 +1,4 @@
-//
-//  ShowsError.swift
-//  SharedTools
-//
-//  Created by Michal Ciurus on 13/04/2018.
-//  Copyright © 2018 michalciurus. All rights reserved.
-//
+//  Created by Michal Ciurus
 
 import Foundation
 
