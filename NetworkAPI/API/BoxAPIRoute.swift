@@ -1,8 +1,13 @@
 //  Created by Michal Ciurus
 
 import Alamofire
+import SharedTools
 
 enum BoxAPIRoute: URLRequestConvertible {
+    
+    static var accessToken: String? = {
+        return KeychainAccess.loadAccessToken()
+    }()
     
     case getBoxes(Int)
     case createBox(BoxDocument)
@@ -40,9 +45,9 @@ enum BoxAPIRoute: URLRequestConvertible {
         case .delete: break
         }
         
-        //TODO:
-        // Move super secret access_token to keychain
-        urlRequest.addValue("Bearer mykey123", forHTTPHeaderField: "Authorization")
+        guard let token = BoxAPIRoute.accessToken else { fatalError("Access token missing, login first") }
+        
+        urlRequest.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
         
         return urlRequest

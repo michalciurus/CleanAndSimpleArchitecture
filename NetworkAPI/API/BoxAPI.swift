@@ -1,6 +1,7 @@
 //  Created by Michal Ciurus
 
 import Alamofire
+import SharedTools
 
 public enum Result<T> {
     case success(T)
@@ -12,9 +13,14 @@ public protocol BoxAPIProtocol {
     func getBoxes(page: Int, completion: @escaping (Result<[BoxDocument]?>) -> ())
     func createBox(key: String, scope: Scope, completion: @escaping (Result<BoxDocument>) -> ())
     func deleteBox(identifier: Int, completion: @escaping (Result<()>) -> ())
+    func login()
 }
 
 public class BoxAPI: BoxAPIProtocol {
+    public func login() -> String {
+        return ""
+    }
+    
     public static var shared: BoxAPIProtocol = BoxAPI()
     
     private init() { }
@@ -65,6 +71,11 @@ public class BoxAPI: BoxAPIProtocol {
             
             return completion(.success(()))
         }
+    }
+    
+    public func login() {
+        //TODO: Implement login/registration
+        KeychainAccess.save(accessToken: "123myaccesstoken")
     }
     
 }

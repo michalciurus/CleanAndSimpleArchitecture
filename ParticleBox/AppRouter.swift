@@ -2,6 +2,7 @@
 
 import UIKit
 import SharedTools
+import NetworkAPI
 
 class AppRouter: Routable {
     var didFinishRouting = EventObservable<Void>()
@@ -15,6 +16,9 @@ class AppRouter: Routable {
     }
     
     func start() {
+        
+        BoxAPI.shared.login()
+        
         let boxFeedStoryboard = UIStoryboard(name: "BoxFeed", bundle: nil)
         guard let boxFeedViewController = boxFeedStoryboard.instantiateViewController(withIdentifier: "BoxFeedViewController") as? BoxFeedViewController else {
             fatalError("Can't load main feed view controller")

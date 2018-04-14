@@ -19,6 +19,7 @@
 		3F0B6DA32080C83E00BC2A6D /* BoxFeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B6DA22080C83E00BC2A6D /* BoxFeedPresenter.swift */; };
 		3F0B6DA52080C91B00BC2A6D /* BoxFeedInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B6DA42080C91B00BC2A6D /* BoxFeedInteractorTests.swift */; };
 		3F0B6DAC2080DC2A00BC2A6D /* DateFormatter+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B6DA92080DBD100BC2A6D /* DateFormatter+UI.swift */; };
+		3F2E7FA620823FD7006199B9 /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2E7FA520823FD7006199B9 /* KeychainAccess.swift */; };
 		3F30750320812CA300F286B5 /* SharedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B6DA62080CFA300BC2A6D /* SharedMocks.swift */; };
 		3F670F852080EF7F008A0123 /* CreateBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F670F832080EF7F008A0123 /* CreateBoxViewController.swift */; };
 		3F670F862080EF7F008A0123 /* CreateBoxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F670F842080EF7F008A0123 /* CreateBoxViewController.xib */; };
@@ -148,6 +149,7 @@
 		3F0B6DA42080C91B00BC2A6D /* BoxFeedInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxFeedInteractorTests.swift; sourceTree = "<group>"; };
 		3F0B6DA62080CFA300BC2A6D /* SharedMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedMocks.swift; sourceTree = "<group>"; };
 		3F0B6DA92080DBD100BC2A6D /* DateFormatter+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+UI.swift"; sourceTree = "<group>"; };
+		3F2E7FA520823FD7006199B9 /* KeychainAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAccess.swift; sourceTree = "<group>"; };
 		3F670F832080EF7F008A0123 /* CreateBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoxViewController.swift; sourceTree = "<group>"; };
 		3F670F842080EF7F008A0123 /* CreateBoxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateBoxViewController.xib; sourceTree = "<group>"; };
 		3F670F872080F1F3008A0123 /* CreateBoxRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoxRouter.swift; sourceTree = "<group>"; };
@@ -318,6 +320,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		3F2E7FA420823FC8006199B9 /* KeychainAccess */ = {
+			isa = PBXGroup;
+			children = (
+				3F2E7FA520823FD7006199B9 /* KeychainAccess.swift */,
+			);
+			path = KeychainAccess;
+			sourceTree = "<group>";
+		};
 		3F41C3DE20813B830022C24E /* ErrorHandling */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +419,7 @@
 		3F9483EF207FC9E200F3BAB0 /* SharedTools */ = {
 			isa = PBXGroup;
 			children = (
+				3F2E7FA420823FC8006199B9 /* KeychainAccess */,
 				3F41C3DE20813B830022C24E /* ErrorHandling */,
 				3F9483E0207FA43300F3BAB0 /* Router */,
 				3F9483DD207F995000F3BAB0 /* Observer */,
@@ -960,6 +971,7 @@
 			files = (
 				3F94840E207FCA2800F3BAB0 /* RouterCollection.swift in Sources */,
 				3F948411207FCA2F00F3BAB0 /* Observable.swift in Sources */,
+				3F2E7FA620823FD7006199B9 /* KeychainAccess.swift in Sources */,
 				3FE95DF120813CAC009B3659 /* EmitsError.swift in Sources */,
 				3F94840D207FCA2600F3BAB0 /* Routable.swift in Sources */,
 				3F94840F207FCA2B00F3BAB0 /* ValueObservable.swift in Sources */,
