@@ -4,7 +4,7 @@ import Foundation
 
 public class Observable<T> {
     
-    public typealias ObserverClosure = (T?) -> ()
+    public typealias ObserverClosure = (T?) -> Void
     
     var observers: [ObserverClosure] = []
     

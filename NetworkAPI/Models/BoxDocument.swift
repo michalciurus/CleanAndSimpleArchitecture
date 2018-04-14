@@ -3,9 +3,9 @@
 import Foundation
 
 public enum Scope: String, Codable {
-    case device = "device"
-    case user = "user"
-    case product = "product"
+    case device
+    case user
+    case product
 }
 
 public struct BoxDocument: Codable {
@@ -28,4 +28,3 @@ public struct BoxDocument: Codable {
         case updatedAt = "updated_at"
     }
 }
-

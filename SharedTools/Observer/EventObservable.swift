@@ -15,7 +15,7 @@ public class EventObservable<T>: Observable<T> {
     /// Observe just for event without value
     ///
     /// - Parameter closure: observer closure
-    public func observe(_ closure: @escaping () -> ()) {
+    public func observe(_ closure: @escaping () -> Void) {
         observe { _ in
             closure()
         }
