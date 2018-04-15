@@ -45,6 +45,7 @@
 		3F948411207FCA2F00F3BAB0 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F94838F207F7D2C00F3BAB0 /* Observable.swift */; };
 		3F94841E207FCE3700F3BAB0 /* NetworkAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F948417207FCE3700F3BAB0 /* NetworkAPI.framework */; };
 		3F94841F207FCE3700F3BAB0 /* NetworkAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F948417207FCE3700F3BAB0 /* NetworkAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3FAEDF3A2083E8C100A47F8C /* CreateBoxInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAEDF392083E8C100A47F8C /* CreateBoxInteractorTests.swift */; };
 		3FCB706A207FD6DA00F415FB /* BoxDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB7067207FD6DA00F415FB /* BoxDocument.swift */; };
 		3FCB706D207FE1E500F415FB /* BoxAPIRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB706C207FE1E500F415FB /* BoxAPIRoute.swift */; };
 		3FCB706F207FE3A400F415FB /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB706E207FE3A400F415FB /* NetworkConstants.swift */; };
@@ -178,6 +179,7 @@
 		3F9483FF207FC9E200F3BAB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F948417207FCE3700F3BAB0 /* NetworkAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F94841A207FCE3700F3BAB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FAEDF392083E8C100A47F8C /* CreateBoxInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoxInteractorTests.swift; sourceTree = "<group>"; };
 		3FCB7067207FD6DA00F415FB /* BoxDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxDocument.swift; sourceTree = "<group>"; };
 		3FCB706C207FE1E500F415FB /* BoxAPIRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxAPIRoute.swift; sourceTree = "<group>"; };
 		3FCB706E207FE3A400F415FB /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 				3F0B6D932080C7EC00BC2A6D /* Info.plist */,
 				3F0B6DA62080CFA300BC2A6D /* SharedMocks.swift */,
 				3F0B6DA42080C91B00BC2A6D /* BoxFeedInteractorTests.swift */,
+				3FAEDF392083E8C100A47F8C /* CreateBoxInteractorTests.swift */,
 			);
 			path = BoxLogicTests;
 			sourceTree = "<group>";
@@ -865,6 +868,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FAEDF3A2083E8C100A47F8C /* CreateBoxInteractorTests.swift in Sources */,
 				3F30750320812CA300F286B5 /* SharedMocks.swift in Sources */,
 				3F0B6DA52080C91B00BC2A6D /* BoxFeedInteractorTests.swift in Sources */,
 			);

@@ -16,7 +16,7 @@ public class BoxFeedInteractor {
 
     //MARK: Public Methods
     
-    public init(boxAPI: BoxAPIProtocol = BoxAPI.shared) {
+    public init(boxAPI: BoxAPIProtocol) {
         self.boxAPI = boxAPI
     }
     

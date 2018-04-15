@@ -3,12 +3,14 @@
 import UIKit
 import SharedTools
 import NetworkAPI
+import BoxLogic
 
 final class CreateBoxRouter: Routable {
     
     //MARK: Private Properties
     
     private let navigationController: UINavigationController
+    private let boxAPI: BoxAPI
 
     //MARK: Public Properties
     
@@ -17,13 +19,14 @@ final class CreateBoxRouter: Routable {
     
     //MARK: Public Methods
     
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController, boxAPI: BoxAPI) {
         self.navigationController = navigationController
+        self.boxAPI = boxAPI
     }
     
     func start() {
-        let createBoxVc = CreateBoxViewController()
-        
+        let createBoxVc = CreateBoxViewController(interactor: CreateBoxInteractor(boxAPI: boxAPI))
+
         createBoxVc.interactor.didCreateBox.observe { [weak self] box in
             self?.didCreateBox.fireEvent(with: box)
             self?.navigationController.popViewController(animated: true)

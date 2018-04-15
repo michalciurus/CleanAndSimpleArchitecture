@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkAPI/API/BoxAPI.swift"
-            timestampString = "545510382.714587"
+            timestampString = "545519658.386894"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "getBoxes(page:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkAPI/API/BoxAPI.swift"
-            timestampString = "545510382.714654"
+            timestampString = "545519658.386965"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "BoxAPI"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetworkAPI/API/BoxAPI.swift"
+            timestampString = "545519658.387013"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "createBox(key:scope:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,13 +58,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkAPI/API/BoxAPI.swift"
-            timestampString = "545510382.714702"
+            timestampString = "545519658.387055"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "createBox(key:scope:completion:)"
-            landmarkType = "7">
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "BoxAPI"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,29 +74,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkAPI/API/BoxAPI.swift"
-            timestampString = "545510382.714744"
+            timestampString = "545519658.387097"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "getBoxes(page:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NetworkAPI/API/BoxAPI.swift"
-            timestampString = "545510382.714783"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "createBox(key:scope:completion:)"
-            landmarkType = "7">
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "BoxAPI"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParticleBox/Scenes/BoxFeed/BoxFeedViewController.swift"
-            timestampString = "545510382.7148269"
+            timestampString = "545519658.38714"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "setupDataSource()"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,73 +106,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParticleBox/Scenes/BoxFeed/BoxFeedViewController.swift"
-            timestampString = "545510382.714879"
+            timestampString = "545519658.387181"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "setupDataSource()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BoxLogic/CreateBoxLogic/CreateBoxPresenter.swift"
-            timestampString = "545509107.534375"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9"
-            endingLineNumber = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BoxLogic/CreateBoxLogic/CreateBoxPresenter.swift"
-            timestampString = "545509107.5344321"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9"
-            endingLineNumber = "9">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BoxLogic.CreateBoxInteractor.createBox(key: Swift.String, scope: Swift.Int) -&gt; ()"
-                  moduleName = "BoxLogic"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michalciurus/Desktop/Repositories/ParticleBox/BoxLogic/CreateBoxLogic/CreateBoxPresenter.swift"
-                  timestampString = "545325286.486812"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "45">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BoxLogic.CreateBoxInteractor.createBox(key: Swift.String, scope: Swift.Int) -&gt; ()"
-                  moduleName = "BoxLogic"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michalciurus/Desktop/Repositories/ParticleBox/BoxLogic/CreateBoxLogic/CreateBoxPresenter.swift"
-                  timestampString = "545325286.488822"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "78">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -182,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParticleBox/Scenes/CreateBox/CreateBoxViewController.swift"
-            timestampString = "545510382.715004"
+            timestampString = "545519658.387224"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "textChanged(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -198,12 +138,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BoxLogic/BoxFeedLogic/BoxFeedInteractor.swift"
-            timestampString = "545510382.715055"
+            timestampString = "545519658.3872679"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
             endingLineNumber = "59"
-            landmarkName = "fetchMoreBoxes()"
+            landmarkName = "deleteBox(at:completion:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -246,12 +186,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BoxLogic/BoxFeedLogic/BoxFeedInteractor.swift"
-            timestampString = "545510382.715097"
+            timestampString = "545519658.387309"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
             endingLineNumber = "57"
-            landmarkName = "fetchMoreBoxes()"
+            landmarkName = "deleteBox(at:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -262,12 +202,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BoxLogic/BoxFeedLogic/BoxFeedInteractor.swift"
-            timestampString = "545510382.715138"
+            timestampString = "545519658.387349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
             endingLineNumber = "28"
-            landmarkName = "init(boxAPI:)"
+            landmarkName = "fetchInitialBoxes()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

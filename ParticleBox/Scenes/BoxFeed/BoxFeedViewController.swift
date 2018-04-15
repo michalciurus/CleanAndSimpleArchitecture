@@ -16,12 +16,14 @@ final class BoxFeedViewController: UITableViewController {
     
     //MARK: Public Properties
     
-    let interactor = BoxFeedInteractor()
+    var interactor: BoxFeedInteractor!
     let createBoxEvent = EventObservable<Void>()
     
     //MARK: Public Methods
     
     override func viewDidLoad() {
+        assert(interactor != nil)
+        
         title = "Boxes"
         setupObservers()
         setupDataSource()

@@ -5,6 +5,10 @@ import SharedTools
 
 public class CreateBoxInteractor {
     
+    //MARK: Private Properties
+    
+    private let boxAPI: BoxAPIProtocol
+    
     //MARK: Public Properties
     
     public let presenter = CreateBoxPresenter()
@@ -12,7 +16,9 @@ public class CreateBoxInteractor {
     
     //MARK: Public Methods
     
-    public init() { }
+    public init(boxAPI: BoxAPIProtocol) {
+        self.boxAPI = boxAPI
+    }
     
     public func createBox(key: String, scope: Int) {
         
@@ -28,7 +34,7 @@ public class CreateBoxInteractor {
         default: fatalError("Scope not supported")
         }
         
-        BoxAPI.shared.createBox(key: key, scope: scopeEnum) { [weak self] result in
+        boxAPI.createBox(key: key, scope: scopeEnum) { [weak self] result in
             self?.presenter.isCreating.value = false
             switch result {
             case .success(let box):

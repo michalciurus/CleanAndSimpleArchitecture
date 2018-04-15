@@ -24,11 +24,23 @@ final class CreateBoxViewController: UIViewController {
     
     //MARK: Public Properties
     
-    let interactor = CreateBoxInteractor()
+    var interactor: CreateBoxInteractor!
     
     //MARK: Public Methods
-
+    
+    
+    init(interactor: CreateBoxInteractor) {
+        super.init(nibName: nil, bundle: nil)
+        self.interactor = interactor
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
     override func viewDidLoad() {
+        assert(interactor != nil)
         super.viewDidLoad()
         title = "Create Box"
         textChanged(keyText)

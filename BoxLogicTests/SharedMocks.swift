@@ -17,17 +17,17 @@ class BoxAPIMock: BoxAPIProtocol {
     func login() {
         
     }
-    
-    static var shared: BoxAPIProtocol = BoxAPIMock()
-    
+        
     var calledGetBoxes = false
     var calledCreateBox = false
     var didCallDelete = false
     var lastPage = 0
+    var lastScope: Scope?
     
     func createBox(key: String, scope: Scope, completion: @escaping (Result<BoxDocument>) -> Void) {
         calledCreateBox = true
         completion(.success(mockDocument))
+        lastScope = scope
     }
     
     func getBoxes(page: Int, completion: @escaping (Result<[BoxDocument]?>) -> Void) {

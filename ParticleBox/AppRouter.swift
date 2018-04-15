@@ -3,6 +3,7 @@
 import UIKit
 import SharedTools
 import NetworkAPI
+import BoxLogic
 
 fileprivate enum AppRouterConstants {
     static let mainStoryboard = "BoxFeed"
@@ -19,6 +20,7 @@ final class AppRouter: Routable {
     private let navigationController = UINavigationController()
     private let routerCollection = RouterCollection()
     private var boxFeed: BoxFeedViewController?
+    private var boxAPI = BoxAPI()
     
     //MARK: Public Properties
     
@@ -32,13 +34,14 @@ final class AppRouter: Routable {
     
     func start() {
         
-        BoxAPI.shared.login()
+        boxAPI.login()
         
         let boxFeedStoryboard = UIStoryboard(name: C.mainStoryboard, bundle: nil)
         guard let boxFeedViewController = boxFeedStoryboard.instantiateViewController(withIdentifier: C.mainViewController) as? BoxFeedViewController else {
             fatalError("Can't load main feed view controller")
         }
         
+        boxFeedViewController.interactor = BoxFeedInteractor(boxAPI: boxAPI)
         boxFeedViewController.createBoxEvent.observe { [weak self] _ in
             self?.showCreateBox()
         }
@@ -53,7 +56,7 @@ final class AppRouter: Routable {
 
 private extension AppRouter {
     func showCreateBox() {
-        let createBoxRouter = CreateBoxRouter(navigationController: self.navigationController)
+        let createBoxRouter = CreateBoxRouter(navigationController: self.navigationController, boxAPI: boxAPI)
         
         createBoxRouter.didCreateBox.observe { [weak self] box in
             if let box = box {

@@ -9,7 +9,6 @@ public enum Result<T> {
 }
 
 public protocol BoxAPIProtocol {
-    static var shared: BoxAPIProtocol { get }
     func getBoxes(page: Int, completion: @escaping (Result<[BoxDocument]?>)-> Void)
     func createBox(key: String, scope: Scope, completion: @escaping (Result<BoxDocument>) -> Void)
     func deleteBox(identifier: Int, completion: @escaping (Result<()>) -> Void)
@@ -17,11 +16,14 @@ public protocol BoxAPIProtocol {
 }
 
 final public class BoxAPI: BoxAPIProtocol {
-
-    public static var shared: BoxAPIProtocol = BoxAPI()
     
-    private init() { }
+    public init() { }
     
+    /// Fetches a list of boxes from the server
+    ///
+    /// - Parameters:
+    ///   - page: which page to fetch
+    ///   - completion: result
     public func getBoxes(page: Int, completion: @escaping (Result<[BoxDocument]?>) -> Void){
         Alamofire.request(BoxAPIRoute.getBoxes(page)).responseJSON { response in
             
@@ -39,6 +41,13 @@ final public class BoxAPI: BoxAPIProtocol {
         }
     }
     
+    
+    /// Creates a box on the server
+    ///
+    /// - Parameters:
+    ///   - key: key of the box
+    ///   - scope: scope of the box
+    ///   - completion: result
     public func createBox(key: String, scope: Scope, completion: @escaping (Result<BoxDocument>) -> Void) {
         var boxDocument = BoxDocument()
         boxDocument.key = key
@@ -59,6 +68,12 @@ final public class BoxAPI: BoxAPIProtocol {
         }
     }
     
+    
+    /// Deletes a box on the server
+    ///
+    /// - Parameters:
+    ///   - identifier: id of the box
+    ///   - completion: result
     public func deleteBox(identifier: Int, completion: @escaping (Result<()>) -> Void) {
         Alamofire.request(BoxAPIRoute.delete(identifier)).response { (response) in
             guard response.error == nil else {
