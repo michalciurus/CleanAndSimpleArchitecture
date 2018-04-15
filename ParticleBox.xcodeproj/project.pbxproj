@@ -26,6 +26,7 @@
 		3F670F882080F1F3008A0123 /* CreateBoxRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F670F872080F1F3008A0123 /* CreateBoxRouter.swift */; };
 		3F670F8D2080F95E008A0123 /* CreateBoxPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F670F8C2080F95E008A0123 /* CreateBoxPresenter.swift */; };
 		3F670F8F2080F966008A0123 /* CreateBoxInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F670F8E2080F966008A0123 /* CreateBoxInteractor.swift */; };
+		3F6E3E482083B3D500800E67 /* TableViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E3E472083B3D500800E67 /* TableViewSource.swift */; };
 		3F8AA238207FE771009684E6 /* BoxAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8AA237207FE771009684E6 /* BoxAPI.swift */; };
 		3F948357207F6A0700F3BAB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F948356207F6A0700F3BAB0 /* AppDelegate.swift */; };
 		3F94835E207F6A0900F3BAB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F94835D207F6A0900F3BAB0 /* Assets.xcassets */; };
@@ -153,6 +154,7 @@
 		3F670F872080F1F3008A0123 /* CreateBoxRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoxRouter.swift; sourceTree = "<group>"; };
 		3F670F8C2080F95E008A0123 /* CreateBoxPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoxPresenter.swift; sourceTree = "<group>"; };
 		3F670F8E2080F966008A0123 /* CreateBoxInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoxInteractor.swift; sourceTree = "<group>"; };
+		3F6E3E472083B3D500800E67 /* TableViewSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSource.swift; sourceTree = "<group>"; };
 		3F8AA237207FE771009684E6 /* BoxAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxAPI.swift; sourceTree = "<group>"; };
 		3F948353207F6A0700F3BAB0 /* ParticleBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParticleBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F948356207F6A0700F3BAB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -347,6 +349,14 @@
 			path = CreateBoxLogic;
 			sourceTree = "<group>";
 		};
+		3F6E3E462083B39800800E67 /* ObserverTools */ = {
+			isa = PBXGroup;
+			children = (
+				3F6E3E472083B3D500800E67 /* TableViewSource.swift */,
+			);
+			path = ObserverTools;
+			sourceTree = "<group>";
+		};
 		3F94834A207F6A0700F3BAB0 = {
 			isa = PBXGroup;
 			children = (
@@ -411,6 +421,7 @@
 		3F9483EF207FC9E200F3BAB0 /* SharedTools */ = {
 			isa = PBXGroup;
 			children = (
+				3F6E3E462083B39800800E67 /* ObserverTools */,
 				3F2E7FA420823FC8006199B9 /* KeychainAccess */,
 				3F41C3DE20813B830022C24E /* ErrorHandling */,
 				3F9483E0207FA43300F3BAB0 /* Router */,
@@ -875,6 +886,7 @@
 				3F948411207FCA2F00F3BAB0 /* Observable.swift in Sources */,
 				3F2E7FA620823FD7006199B9 /* KeychainAccess.swift in Sources */,
 				3FE95DF120813CAC009B3659 /* EmitsError.swift in Sources */,
+				3F6E3E482083B3D500800E67 /* TableViewSource.swift in Sources */,
 				3F94840D207FCA2600F3BAB0 /* Routable.swift in Sources */,
 				3F94840F207FCA2B00F3BAB0 /* ValueObservable.swift in Sources */,
 				3F948410207FCA2D00F3BAB0 /* EventObservable.swift in Sources */,
@@ -976,7 +988,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BoxLogic/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.BoxLogic;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1002,7 +1018,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BoxLogic/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.BoxLogic;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1021,7 +1041,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6QC8GZ62E;
 				INFOPLIST_FILE = BoxLogicTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.BoxLogicTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1039,7 +1063,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6QC8GZ62E;
 				INFOPLIST_FILE = BoxLogicTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.BoxLogicTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1171,7 +1199,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6QC8GZ62E;
 				INFOPLIST_FILE = ParticleBox/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.ParticleBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1188,7 +1219,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6QC8GZ62E;
 				INFOPLIST_FILE = ParticleBox/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.ParticleBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1209,7 +1243,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SharedTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.SharedTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1233,7 +1271,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SharedTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.SharedTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1251,7 +1293,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6QC8GZ62E;
 				INFOPLIST_FILE = SharedToolsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.SharedToolsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1267,7 +1313,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6QC8GZ62E;
 				INFOPLIST_FILE = SharedToolsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.SharedToolsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1291,7 +1341,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NetworkAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.NetworkAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1318,7 +1372,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NetworkAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michalciurus.NetworkAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
