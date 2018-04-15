@@ -1,12 +1,20 @@
 // Created by Michal Ciurus
+
 import Foundation
 import NetworkAPI
 
 public class BoxFeedInteractor {
     
-    public let presenter = BoxFeedPresenter()
+    //MARK: Private Properties
+    
     private let boxAPI: BoxAPIProtocol
     private var currentPage: Int = 0
+    
+    //MARK: Public Properties
+    
+    public let presenter = BoxFeedPresenter()
+
+    //MARK: Public Methods
     
     public init(boxAPI: BoxAPIProtocol = BoxAPI.shared) {
         self.boxAPI = boxAPI

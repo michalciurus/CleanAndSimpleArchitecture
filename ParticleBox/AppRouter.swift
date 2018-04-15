@@ -13,11 +13,18 @@ final class AppRouter: Routable {
     
     fileprivate typealias C = AppRouterConstants
     
+    //MARK: Private Properties
+    
+    private var window: UIWindow
+    private let navigationController = UINavigationController()
+    private let routerCollection = RouterCollection()
+    private var boxFeed: BoxFeedViewController?
+    
+    //MARK: Public Properties
+    
     var didFinishRouting = EventObservable<Void>()
-    var window: UIWindow
-    let navigationController = UINavigationController()
-    let routerCollection = RouterCollection()
-    var boxFeed: BoxFeedViewController?
+
+    //MARK: Public Methohds
     
     init(window: UIWindow) {
         self.window = window

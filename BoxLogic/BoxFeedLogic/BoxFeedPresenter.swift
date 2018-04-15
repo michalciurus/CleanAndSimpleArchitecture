@@ -18,9 +18,13 @@ public class BoxFeedPresenter: EmitsError {
     
     fileprivate typealias C = BoxFeedPresenterConstants
     
+    //MARK: Public Properties
+    
     public var boxes = PresenterValueObservable<[BoxPresenter]>(value: [])
     public var isLoading = PresenterValueObservable<Bool>(value: false)
     public var errorEvent = PresenterEventObservable<String>()
+    
+    //MARK: Internal Methods
     
     internal func add(boxes newBoxes: [BoxDocument], atTheTop: Bool = false) {
         let boxesPresenters = newBoxes.map { (box) -> BoxPresenter in

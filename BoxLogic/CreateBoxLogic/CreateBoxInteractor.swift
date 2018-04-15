@@ -5,8 +5,12 @@ import SharedTools
 
 public class CreateBoxInteractor {
     
+    //MARK: Public Properties
+    
     public let presenter = CreateBoxPresenter()
     public let didCreateBox = EventObservable<BoxDocument>()
+    
+    //MARK: Public Methods
     
     public init() { }
     

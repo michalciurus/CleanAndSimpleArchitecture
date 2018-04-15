@@ -6,9 +6,16 @@ import NetworkAPI
 
 final class CreateBoxRouter: Routable {
     
+    //MARK: Private Properties
+    
+    private let navigationController: UINavigationController
+
+    //MARK: Public Properties
+    
     var didFinishRouting = EventObservable<Void>()
     var didCreateBox = EventObservable<BoxDocument>()
-    let navigationController: UINavigationController
+    
+    //MARK: Public Methods
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController

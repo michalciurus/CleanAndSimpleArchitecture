@@ -5,13 +5,7 @@ import BoxLogic
 
 final class CreateBoxViewController: UIViewController {
     
-    let interactor = CreateBoxInteractor()
-    
-    @IBOutlet private weak var keyText: UITextField! {
-        didSet {
-            keyText.becomeFirstResponder()
-        }
-    }
+    //MARK: Private Properties
     
     @IBOutlet private weak var spinner: UIActivityIndicatorView! {
         didSet {
@@ -19,8 +13,20 @@ final class CreateBoxViewController: UIViewController {
         }
     }
     
+    @IBOutlet private weak var keyText: UITextField! {
+        didSet {
+            keyText.becomeFirstResponder()
+        }
+    }
+    
     @IBOutlet private weak var scopeControl: UISegmentedControl!
     @IBOutlet private weak var createBoxButton: UIButton!
+    
+    //MARK: Public Properties
+    
+    let interactor = CreateBoxInteractor()
+    
+    //MARK: Public Methods
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +35,9 @@ final class CreateBoxViewController: UIViewController {
         setupObservers()
         subscribeTo(errorEmitter: interactor.presenter)
     }
+}
+
+private extension CreateBoxViewController {
     
     @IBAction func didTapCreateBox(_ sender: Any) {
         interactor.createBox(key: keyText.text!, scope: scopeControl.selectedSegmentIndex)
@@ -41,9 +50,6 @@ final class CreateBoxViewController: UIViewController {
         createBoxButton.alpha = enabled ? 1 : 0.5
     }
     
-}
-
-private extension CreateBoxViewController {
     func setupObservers() {
         interactor.presenter.isCreating.observe { [weak self] isCreating in
             if let isCreating = isCreating {

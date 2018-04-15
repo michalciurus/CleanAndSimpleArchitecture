@@ -6,23 +6,28 @@ import SharedTools
 
 final class BoxFeedViewController: UITableViewController {
     
-    let interactor = BoxFeedInteractor()
-    var shouldRunDeleteAnimation = false
-    let createBoxEvent = EventObservable<Void>()
-    var dataSource: TableViewDataSource<BoxFeedViewCell, BoxPresenter>?
+    //MARK: Private Properties
+    
+    private var shouldRunDeleteAnimation = false
+    private var dataSource: TableViewDataSource<BoxFeedViewCell, BoxPresenter>?
     
     @IBOutlet private weak var loadMoreButton: UIButton!
     @IBOutlet private weak var loadingIndicator: UIActivityIndicatorView!
     
+    //MARK: Public Properties
+    
+    let interactor = BoxFeedInteractor()
+    let createBoxEvent = EventObservable<Void>()
+    
+    //MARK: Public Methods
+    
     override func viewDidLoad() {
         title = "Boxes"
-        
         setupObservers()
         setupDataSource()
         addCreateBoxButton()
         interactor.fetchInitialBoxes()
         subscribeTo(errorEmitter: interactor.presenter)
-        
         tableView.refreshControl = UIRefreshControl()
         tableView.refreshControl?.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
     }
@@ -30,17 +35,13 @@ final class BoxFeedViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         addCreateBoxButton()
     }
+}
+
+private extension BoxFeedViewController {
     
     @objc func pullToRefresh() {
         interactor.fetchInitialBoxes()
     }
-    
-    @IBAction func didTapLoadMore(_ sender: Any) {
-        interactor.fetchMoreBoxes()
-    }
-}
-
-private extension BoxFeedViewController {
     
     func setupObservers() {
         interactor.presenter.boxes.observe { [weak self] _ in
@@ -60,6 +61,7 @@ private extension BoxFeedViewController {
     }
     
     func setupDataSource() {
+        
         self.dataSource = TableViewDataSource<BoxFeedViewCell, BoxPresenter>(cellIdentifier: BoxFeedViewCell.identifier, observable: interactor.presenter.boxes) { (cell, presenter) in
             cell.configure(with: presenter)
             return cell
@@ -81,6 +83,10 @@ private extension BoxFeedViewController {
     
     @objc func didTapCreate() {
         createBoxEvent.fireEvent()
+    }
+    
+    @IBAction func didTapLoadMore(_ sender: Any) {
+        interactor.fetchMoreBoxes()
     }
     
     func addCreateBoxButton() {

@@ -12,7 +12,6 @@ class BoxFeedInteractorTests: XCTestCase {
     var mockAPI: BoxAPIMock!
     
     override func setUp() {
-
         mockAPI = BoxAPIMock()
         boxFeedInteractor = BoxFeedInteractor(boxAPI: mockAPI)
     }

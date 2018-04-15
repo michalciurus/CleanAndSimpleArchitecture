@@ -17,10 +17,7 @@ public protocol BoxAPIProtocol {
 }
 
 final public class BoxAPI: BoxAPIProtocol {
-    public func login() -> String {
-        return ""
-    }
-    
+
     public static var shared: BoxAPIProtocol = BoxAPI()
     
     private init() { }

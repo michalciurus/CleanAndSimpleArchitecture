@@ -6,11 +6,17 @@ final public class TableViewDataSource<V, T>: NSObject, UITableViewDataSource wh
     
     public typealias CellConfiguration = (V, T) -> V
     
+    //MARK: Private Properties
+    
     private var observable: ValueObservable<[T]>
     private let cellIdentifier: String
     private let configureCell: CellConfiguration
     
+    //MARK: Public Properties
+    
     public let didDelete = EventObservable<IndexPath>()
+    
+    //MARK: Public Methods
     
     public init(cellIdentifier: String, observable: ValueObservable<[T]>, configureCell: @escaping CellConfiguration) {
         self.cellIdentifier = cellIdentifier
