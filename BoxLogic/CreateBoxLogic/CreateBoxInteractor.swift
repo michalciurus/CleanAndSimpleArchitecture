@@ -16,6 +16,8 @@ public class CreateBoxInteractor {
     
     public func createBox(key: String, scope: Int) {
         
+        assert(key.count > 0)
+        
         presenter.isCreating.value = true
         
         var scopeEnum = Scope.device
@@ -24,7 +26,6 @@ public class CreateBoxInteractor {
         case 1: scopeEnum = Scope.user
         case 2: scopeEnum = Scope.product
         default: fatalError("Scope not supported")
-
         }
         
         BoxAPI.shared.createBox(key: key, scope: scopeEnum) { [weak self] result in

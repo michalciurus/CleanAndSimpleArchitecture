@@ -40,7 +40,10 @@ final class CreateBoxViewController: UIViewController {
 private extension CreateBoxViewController {
     
     @IBAction func didTapCreateBox(_ sender: Any) {
-        interactor.createBox(key: keyText.text!, scope: scopeControl.selectedSegmentIndex)
+        assert(keyText.text != nil && keyText.text!.count > 0)
+        if let text = keyText.text {
+            interactor.createBox(key:text , scope: scopeControl.selectedSegmentIndex)
+        }
     }
     
     @IBAction func textChanged(_ sender: Any) {

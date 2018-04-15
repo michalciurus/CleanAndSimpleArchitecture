@@ -28,10 +28,13 @@ public class BoxFeedPresenter: EmitsError {
     
     internal func add(boxes newBoxes: [BoxDocument], atTheTop: Bool = false) {
         let boxesPresenters = newBoxes.map { (box) -> BoxPresenter in
-            var dateString = DateFormatter.UIFormatter().string(from: box.updatedAt!)
+            guard let date = box.updatedAt, let key = box.key,
+                let identifier = box.productId, let scope = box.scope else { fatalError("Box missing values") }
+            
+            var dateString = DateFormatter.UIFormatter().string(from: date)
             dateString = "\(C.datePrefix) \(dateString)"
-            let description = "\(box.key!) (\(box.scope!.rawValue))"
-            return BoxPresenter(descriptionLabel: description, dateLabel: dateString, identifier: box.productId!)
+            let description = "\(key) (\(scope.rawValue))"
+            return BoxPresenter(descriptionLabel: description, dateLabel: dateString, identifier: identifier)
         }
         
         if atTheTop {

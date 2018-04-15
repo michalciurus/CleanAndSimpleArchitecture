@@ -54,7 +54,7 @@ public class BoxFeedInteractor {
     }
     
     public func deleteBox(at index: Int, completion: @escaping (Bool) -> Void) {
-        let boxId = presenter.boxes.value![index].identifier
+        guard let boxId = presenter.boxes.value?[index].identifier else { fatalError("Presenter missing")}
         
         boxAPI.deleteBox(identifier: boxId) { [weak self] result in
             switch result {

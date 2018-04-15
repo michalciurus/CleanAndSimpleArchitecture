@@ -35,7 +35,8 @@ final public class TableViewDataSource<V, T>: NSObject, UITableViewDataSource wh
             fatalError("Identifier or class not registered with this table view")
         }
         
-        let presenter = observable.value![indexPath.row]
+        guard let presenter = observable.value?[indexPath.row] else { fatalError("No presenter") }
+        
         return configureCell(currentCell, presenter)
     }
     
