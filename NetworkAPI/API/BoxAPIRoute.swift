@@ -4,7 +4,7 @@ import Alamofire
 import SharedTools
 
 enum BoxAPIRoute: URLRequestConvertible {
-    
+        
     static var accessToken: String? = {
         return KeychainAccess.loadAccessToken()
     }()

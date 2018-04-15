@@ -3,5 +3,5 @@
 import Foundation
 
 public protocol EmitsError {
-    var errorEvent: EventObservable<String> { get }
+    var errorEvent: PresenterEventObservable<String> { get }
 }

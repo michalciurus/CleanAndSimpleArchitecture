@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkAPI/API/BoxAPI.swift"
-            timestampString = "545410044.037347"
+            timestampString = "545509107.5338629"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkAPI/API/BoxAPI.swift"
-            timestampString = "545410044.037406"
+            timestampString = "545509107.533968"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkAPI/API/BoxAPI.swift"
-            timestampString = "545410044.037449"
+            timestampString = "545509107.534023"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkAPI/API/BoxAPI.swift"
-            timestampString = "545410044.037486"
+            timestampString = "545509107.5340739"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkAPI/API/BoxAPI.swift"
-            timestampString = "545410044.037522"
+            timestampString = "545509107.534124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
@@ -90,28 +90,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParticleBox/Scenes/BoxFeed/BoxFeedViewController.swift"
-            timestampString = "545341289.747311"
+            timestampString = "545509107.534179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "BoxFeedViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ParticleBox/Scenes/BoxFeed/BoxFeedViewController.swift"
-            timestampString = "545341289.747382"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "setupObservers()"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "didTapLoadMore(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -122,12 +106,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParticleBox/Scenes/BoxFeed/BoxFeedViewController.swift"
-            timestampString = "545341289.7474329"
+            timestampString = "545509107.534246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "setupObservers()"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "setupDataSource()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ParticleBox/Scenes/BoxFeed/BoxFeedViewController.swift"
+            timestampString = "545509107.534312"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "setupDataSource()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BoxLogic/CreateBoxLogic/CreateBoxPresenter.swift"
-            timestampString = "545341289.747483"
+            timestampString = "545509107.534375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "9"
@@ -152,7 +152,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BoxLogic/CreateBoxLogic/CreateBoxPresenter.swift"
-            timestampString = "545341289.74753"
+            timestampString = "545509107.5344321"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "9"
@@ -198,7 +198,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParticleBox/Scenes/CreateBox/CreateBoxViewController.swift"
-            timestampString = "545341289.747576"
+            timestampString = "545509107.5344909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -214,7 +214,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParticleBox/Scenes/CreateBox/CreateBoxViewController.swift"
-            timestampString = "545341289.747622"
+            timestampString = "545509107.534546"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"

@@ -4,6 +4,10 @@ import Foundation
 import NetworkAPI
 import SharedTools
 
+fileprivate enum BoxFeedPresenterConstants {
+    static let datePrefix = "updated at:"
+}
+
 public struct BoxPresenter {
     public let descriptionLabel: String
     public let dateLabel: String?
@@ -12,14 +16,16 @@ public struct BoxPresenter {
 
 public class BoxFeedPresenter: EmitsError {
     
-    public var boxes = ValueObservable<[BoxPresenter]>(value: [])
-    public var isLoading = ValueObservable<Bool>(value: false)
-    public var errorEvent = EventObservable<String>()
+    fileprivate typealias C = BoxFeedPresenterConstants
+    
+    public var boxes = PresenterValueObservable<[BoxPresenter]>(value: [])
+    public var isLoading = PresenterValueObservable<Bool>(value: false)
+    public var errorEvent = PresenterEventObservable<String>()
     
     internal func add(boxes newBoxes: [BoxDocument], atTheTop: Bool = false) {
         let boxesPresenters = newBoxes.map { (box) -> BoxPresenter in
             var dateString = DateFormatter.UIFormatter().string(from: box.updatedAt!)
-            dateString = "updated at: \(dateString)"
+            dateString = "\(C.datePrefix) \(dateString)"
             let description = "\(box.key!) (\(box.scope!.rawValue))"
             return BoxPresenter(descriptionLabel: description, dateLabel: dateString, identifier: box.productId!)
         }

@@ -4,7 +4,7 @@ import UIKit
 import SharedTools
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     let routerCollection = RouterCollection()

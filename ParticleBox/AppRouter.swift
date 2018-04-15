@@ -4,7 +4,15 @@ import UIKit
 import SharedTools
 import NetworkAPI
 
-class AppRouter: Routable {
+fileprivate enum AppRouterConstants {
+    static let mainStoryboard = "BoxFeed"
+    static let mainViewController = "BoxFeedViewController"
+}
+
+final class AppRouter: Routable {
+    
+    fileprivate typealias C = AppRouterConstants
+    
     var didFinishRouting = EventObservable<Void>()
     var window: UIWindow
     let navigationController = UINavigationController()
@@ -19,8 +27,8 @@ class AppRouter: Routable {
         
         BoxAPI.shared.login()
         
-        let boxFeedStoryboard = UIStoryboard(name: "BoxFeed", bundle: nil)
-        guard let boxFeedViewController = boxFeedStoryboard.instantiateViewController(withIdentifier: "BoxFeedViewController") as? BoxFeedViewController else {
+        let boxFeedStoryboard = UIStoryboard(name: C.mainStoryboard, bundle: nil)
+        guard let boxFeedViewController = boxFeedStoryboard.instantiateViewController(withIdentifier: C.mainViewController) as? BoxFeedViewController else {
             fatalError("Can't load main feed view controller")
         }
         

@@ -4,7 +4,7 @@ import UIKit
 import BoxLogic
 import SharedTools
 
-class BoxFeedViewController: UITableViewController {
+final class BoxFeedViewController: UITableViewController {
     
     let interactor = BoxFeedInteractor()
     var shouldRunDeleteAnimation = false
@@ -25,7 +25,6 @@ class BoxFeedViewController: UITableViewController {
         
         tableView.refreshControl = UIRefreshControl()
         tableView.refreshControl?.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -61,7 +60,7 @@ private extension BoxFeedViewController {
     }
     
     func setupDataSource() {
-        self.dataSource = TableViewDataSource<BoxFeedViewCell, BoxPresenter>(cellIdentifier: "BoxFeedViewCell", observable: interactor.presenter.boxes) { (cell, presenter) in
+        self.dataSource = TableViewDataSource<BoxFeedViewCell, BoxPresenter>(cellIdentifier: BoxFeedViewCell.identifier, observable: interactor.presenter.boxes) { (cell, presenter) in
             cell.configure(with: presenter)
             return cell
         }

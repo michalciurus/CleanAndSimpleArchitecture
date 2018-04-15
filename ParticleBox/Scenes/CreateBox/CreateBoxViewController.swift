@@ -3,7 +3,7 @@
 import UIKit
 import BoxLogic
 
-class CreateBoxViewController: UIViewController {
+final class CreateBoxViewController: UIViewController {
     
     let interactor = CreateBoxInteractor()
     

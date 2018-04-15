@@ -3,7 +3,9 @@
 import UIKit
 import BoxLogic
 
-class BoxFeedViewCell: UITableViewCell {
+final class BoxFeedViewCell: UITableViewCell {
+    
+    static let identifier = "BoxFeedViewCell"
     
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var dateLabel: UILabel!

@@ -16,7 +16,7 @@ public protocol BoxAPIProtocol {
     func login()
 }
 
-public class BoxAPI: BoxAPIProtocol {
+final public class BoxAPI: BoxAPIProtocol {
     public func login() -> String {
         return ""
     }

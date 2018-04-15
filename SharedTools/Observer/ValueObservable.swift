@@ -8,13 +8,17 @@ public class ValueObservable<T>: Observable<T> {
 
     public var value: T? {
         didSet {
-            for observer in observers {
-                observer(value)
-            }
+            fireObservers()
         }
     }
     
     public init(value: T?) {
         self.value = value
+    }
+    
+    internal func fireObservers() {
+        for observer in observers {
+            observer(value)
+        }
     }
 }

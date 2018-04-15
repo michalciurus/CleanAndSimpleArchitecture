@@ -4,7 +4,7 @@ import UIKit
 import SharedTools
 import NetworkAPI
 
-class CreateBoxRouter: Routable {
+final class CreateBoxRouter: Routable {
     
     var didFinishRouting = EventObservable<Void>()
     var didCreateBox = EventObservable<BoxDocument>()

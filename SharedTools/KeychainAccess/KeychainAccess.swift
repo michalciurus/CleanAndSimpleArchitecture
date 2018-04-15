@@ -2,14 +2,14 @@
 
 import Foundation
 
-enum KeychainAccessConstants {
+fileprivate enum KeychainAccessConstants {
     static let service = "com.box"
     static let tokenAccount = "CurrentToken"
 }
 
-public class KeychainAccess {
+final public class KeychainAccess {
     
-    typealias C = KeychainAccessConstants
+    fileprivate typealias C = KeychainAccessConstants
     
     public static func save(accessToken: String) {
         if let dataFromString = accessToken.data(using: String.Encoding.utf8, allowLossyConversion: false) {

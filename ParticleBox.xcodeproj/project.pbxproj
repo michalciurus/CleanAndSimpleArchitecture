@@ -21,6 +21,8 @@
 		3F0B6DAC2080DC2A00BC2A6D /* DateFormatter+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B6DA92080DBD100BC2A6D /* DateFormatter+UI.swift */; };
 		3F2E7FA620823FD7006199B9 /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2E7FA520823FD7006199B9 /* KeychainAccess.swift */; };
 		3F30750320812CA300F286B5 /* SharedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B6DA62080CFA300BC2A6D /* SharedMocks.swift */; };
+		3F4801C62083CC4E000B70E1 /* PresenterValueObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4801C52083CC4E000B70E1 /* PresenterValueObservable.swift */; };
+		3F4801C82083CC5C000B70E1 /* PresenterEventObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4801C72083CC5C000B70E1 /* PresenterEventObservable.swift */; };
 		3F670F852080EF7F008A0123 /* CreateBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F670F832080EF7F008A0123 /* CreateBoxViewController.swift */; };
 		3F670F862080EF7F008A0123 /* CreateBoxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F670F842080EF7F008A0123 /* CreateBoxViewController.xib */; };
 		3F670F882080F1F3008A0123 /* CreateBoxRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F670F872080F1F3008A0123 /* CreateBoxRouter.swift */; };
@@ -149,6 +151,8 @@
 		3F0B6DA62080CFA300BC2A6D /* SharedMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedMocks.swift; sourceTree = "<group>"; };
 		3F0B6DA92080DBD100BC2A6D /* DateFormatter+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+UI.swift"; sourceTree = "<group>"; };
 		3F2E7FA520823FD7006199B9 /* KeychainAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAccess.swift; sourceTree = "<group>"; };
+		3F4801C52083CC4E000B70E1 /* PresenterValueObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterValueObservable.swift; sourceTree = "<group>"; };
+		3F4801C72083CC5C000B70E1 /* PresenterEventObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterEventObservable.swift; sourceTree = "<group>"; };
 		3F670F832080EF7F008A0123 /* CreateBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoxViewController.swift; sourceTree = "<group>"; };
 		3F670F842080EF7F008A0123 /* CreateBoxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateBoxViewController.xib; sourceTree = "<group>"; };
 		3F670F872080F1F3008A0123 /* CreateBoxRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoxRouter.swift; sourceTree = "<group>"; };
@@ -405,6 +409,8 @@
 				3F948389207F74D000F3BAB0 /* ValueObservable.swift */,
 				3F94838B207F74DB00F3BAB0 /* EventObservable.swift */,
 				3F94838F207F7D2C00F3BAB0 /* Observable.swift */,
+				3F4801C52083CC4E000B70E1 /* PresenterValueObservable.swift */,
+				3F4801C72083CC5C000B70E1 /* PresenterEventObservable.swift */,
 			);
 			path = Observer;
 			sourceTree = "<group>";
@@ -888,6 +894,8 @@
 				3FE95DF120813CAC009B3659 /* EmitsError.swift in Sources */,
 				3F6E3E482083B3D500800E67 /* TableViewSource.swift in Sources */,
 				3F94840D207FCA2600F3BAB0 /* Routable.swift in Sources */,
+				3F4801C82083CC5C000B70E1 /* PresenterEventObservable.swift in Sources */,
+				3F4801C62083CC4E000B70E1 /* PresenterValueObservable.swift in Sources */,
 				3F94840F207FCA2B00F3BAB0 /* ValueObservable.swift in Sources */,
 				3F948410207FCA2D00F3BAB0 /* EventObservable.swift in Sources */,
 			);

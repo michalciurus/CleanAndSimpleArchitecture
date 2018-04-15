@@ -2,7 +2,7 @@
 
 import Foundation
 
-public class RouterCollection {
+final public class RouterCollection {
     
     var routers: [Routable] = []
     

@@ -2,7 +2,7 @@
 
 import SharedTools
 
-public class CreateBoxPresenter: EmitsError {
-    public var errorEvent = EventObservable<String>()
-    public let isCreating = ValueObservable<Bool>(value: false)
+final public class CreateBoxPresenter: EmitsError {
+    public var errorEvent = PresenterEventObservable<String>()
+    public let isCreating = PresenterValueObservable<Bool>(value: false)
 }
