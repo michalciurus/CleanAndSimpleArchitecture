@@ -46,6 +46,7 @@
 		3F94841E207FCE3700F3BAB0 /* NetworkAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F948417207FCE3700F3BAB0 /* NetworkAPI.framework */; };
 		3F94841F207FCE3700F3BAB0 /* NetworkAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F948417207FCE3700F3BAB0 /* NetworkAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3FAEDF3A2083E8C100A47F8C /* CreateBoxInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAEDF392083E8C100A47F8C /* CreateBoxInteractorTests.swift */; };
+		3FAEDF3C2083FA2E00A47F8C /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAEDF3B2083FA2E00A47F8C /* Injectable.swift */; };
 		3FCB706A207FD6DA00F415FB /* BoxDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB7067207FD6DA00F415FB /* BoxDocument.swift */; };
 		3FCB706D207FE1E500F415FB /* BoxAPIRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB706C207FE1E500F415FB /* BoxAPIRoute.swift */; };
 		3FCB706F207FE3A400F415FB /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB706E207FE3A400F415FB /* NetworkConstants.swift */; };
@@ -180,6 +181,7 @@
 		3F948417207FCE3700F3BAB0 /* NetworkAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F94841A207FCE3700F3BAB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FAEDF392083E8C100A47F8C /* CreateBoxInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoxInteractorTests.swift; sourceTree = "<group>"; };
+		3FAEDF3B2083FA2E00A47F8C /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		3FCB7067207FD6DA00F415FB /* BoxDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxDocument.swift; sourceTree = "<group>"; };
 		3FCB706C207FE1E500F415FB /* BoxAPIRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxAPIRoute.swift; sourceTree = "<group>"; };
 		3FCB706E207FE3A400F415FB /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
@@ -484,6 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				3FE95DF320813D17009B3659 /* UIViewController+ShowError.swift */,
+				3FAEDF3B2083FA2E00A47F8C /* Injectable.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -882,6 +885,7 @@
 				3F670F852080EF7F008A0123 /* CreateBoxViewController.swift in Sources */,
 				3F948357207F6A0700F3BAB0 /* AppDelegate.swift in Sources */,
 				3F0B6D782080C1F200BC2A6D /* BoxFeedViewCell.swift in Sources */,
+				3FAEDF3C2083FA2E00A47F8C /* Injectable.swift in Sources */,
 				3F0B6D742080C1DB00BC2A6D /* BoxFeedViewController.swift in Sources */,
 				3FE95DF420813D17009B3659 /* UIViewController+ShowError.swift in Sources */,
 				3F0B6D6E2080BFDC00BC2A6D /* AppRouter.swift in Sources */,

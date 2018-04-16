@@ -5,7 +5,7 @@ import BoxLogic
 import SharedTools
 
 final class BoxFeedViewController: UITableViewController {
-    
+
     //MARK: Private Properties
     
     private var shouldRunDeleteAnimation = false
@@ -22,8 +22,7 @@ final class BoxFeedViewController: UITableViewController {
     //MARK: Public Methods
     
     override func viewDidLoad() {
-        assert(interactor != nil)
-        
+        assertDependency()        
         title = "Boxes"
         setupObservers()
         setupDataSource()
@@ -94,5 +93,10 @@ private extension BoxFeedViewController {
     func addCreateBoxButton() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "➕", style: .plain, target: self, action: #selector(didTapCreate))
     }
-    
+}
+
+extension BoxFeedViewController: InjectableInteractor {
+    func inject(_ interactor: BoxFeedInteractor) {
+        self.interactor = interactor
+    }
 }

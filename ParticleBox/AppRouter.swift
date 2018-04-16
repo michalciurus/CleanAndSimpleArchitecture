@@ -41,7 +41,7 @@ final class AppRouter: Routable {
             fatalError("Can't load main feed view controller")
         }
         
-        boxFeedViewController.interactor = BoxFeedInteractor(boxAPI: boxAPI)
+        boxFeedViewController.inject(BoxFeedInteractor(boxAPI: boxAPI))
         boxFeedViewController.createBoxEvent.observe { [weak self] _ in
             self?.showCreateBox()
         }
