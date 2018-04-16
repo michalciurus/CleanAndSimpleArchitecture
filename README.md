@@ -26,4 +26,4 @@ Code has been divided in separate targets which makes the app modular and cleanl
 The architecture of my invention is a simple evolution of MVVM. Its goal was to separate business logic and presentation logic.
 It's similar to [VIPER](https://www.objc.io/issues/13-architecture/viper/) but simpler to set up.
 
-![arch](https://pbs.twimg.com/media/DCwJoM-XUAAJJD2?format=jpg)
+![arch](https://pbs.twimg.com/media/DCwJoM-XUAAJJD2?format=jpg | width = 300)
