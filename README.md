@@ -17,6 +17,7 @@ The goal was to demonstrate a solution for:
 - Dividing app into separate modules
 - Simple API definition with Alamofire
 - Simple error handling
+- Dependency Injection
 
 Code has been divided in separate targets which makes the app modular and cleanly draws a line between different domains of the app and their tests.
 
