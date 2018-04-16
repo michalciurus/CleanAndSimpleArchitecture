@@ -10,4 +10,5 @@ final public class PresenterEventObservable<T>: EventObservable<T> {
             super.fireEvent(with: value)
         }
     }
+    
 }

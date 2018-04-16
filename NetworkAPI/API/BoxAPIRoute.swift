@@ -53,5 +53,4 @@ enum BoxAPIRoute: URLRequestConvertible {
         return urlRequest
     }
     
-    
 }

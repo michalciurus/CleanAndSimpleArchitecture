@@ -10,4 +10,5 @@ extension JSONEncoder {
         encoder.dateEncodingStrategy = .formatted(DateFormatter.boxDateFormatter())
         return encoder
     }
+    
 }

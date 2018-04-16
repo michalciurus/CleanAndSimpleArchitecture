@@ -13,4 +13,5 @@ public class Observable<T> {
     public func observe(_ closure: @escaping ObserverClosure) {
         observers.append(closure)
     }
+    
 }

@@ -9,10 +9,12 @@ public enum Result<T> {
 }
 
 public protocol BoxAPIProtocol {
+    
     func getBoxes(page: Int, completion: @escaping (Result<[BoxDocument]?>)-> Void)
     func createBox(key: String, scope: Scope, completion: @escaping (Result<BoxDocument>) -> Void)
     func deleteBox(identifier: Int, completion: @escaping (Result<()>) -> Void)
     func login()
+    
 }
 
 final public class BoxAPI: BoxAPIProtocol {

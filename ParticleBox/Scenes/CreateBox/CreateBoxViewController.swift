@@ -28,7 +28,6 @@ final class CreateBoxViewController: UIViewController {
     
     //MARK: Public Methods
     
-    
     init(interactor: CreateBoxInteractor) {
         super.init(nibName: nil, bundle: nil)
         self.interactor = interactor
@@ -38,7 +37,6 @@ final class CreateBoxViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
 
     }
-    
     
     override func viewDidLoad() {
         assert(interactor != nil)
@@ -73,4 +71,5 @@ private extension CreateBoxViewController {
             }
         }
     }
+    
 }

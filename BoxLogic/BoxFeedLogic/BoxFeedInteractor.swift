@@ -72,4 +72,5 @@ public class BoxFeedInteractor {
     public func add(box: BoxDocument) {
         presenter.add(boxes: [box], atTheTop: true)
     }
+    
 }

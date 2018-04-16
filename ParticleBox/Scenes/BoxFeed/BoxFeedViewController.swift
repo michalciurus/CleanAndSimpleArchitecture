@@ -36,6 +36,7 @@ final class BoxFeedViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         addCreateBoxButton()
     }
+    
 }
 
 private extension BoxFeedViewController {
@@ -93,10 +94,13 @@ private extension BoxFeedViewController {
     func addCreateBoxButton() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "➕", style: .plain, target: self, action: #selector(didTapCreate))
     }
+    
 }
 
 extension BoxFeedViewController: InjectableInteractor {
+    
     func inject(_ interactor: BoxFeedInteractor) {
         self.interactor = interactor
     }
+    
 }

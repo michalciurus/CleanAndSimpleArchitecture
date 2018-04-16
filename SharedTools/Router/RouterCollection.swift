@@ -15,5 +15,6 @@ final public class RouterCollection {
             guard let strongSelf = self else { return }
             strongSelf.routers.remove(at: strongSelf.routers.index { $0 === router }!)
         }
-    }    
+    }
+    
 }

@@ -18,4 +18,5 @@ final class BoxFeedViewCell: UITableViewCell {
         descriptionLabel.text = presenter.descriptionLabel
         dateLabel.text = presenter.dateLabel
     }
+    
 }

@@ -21,4 +21,5 @@ public class ValueObservable<T>: Observable<T> {
             observer(value)
         }
     }
+    
 }

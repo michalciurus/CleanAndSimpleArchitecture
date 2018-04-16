@@ -10,4 +10,5 @@ extension JSONDecoder {
         decoder.dateDecodingStrategy = .formatted(DateFormatter.boxDateFormatter())
         return decoder
     }
+    
 }
